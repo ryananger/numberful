@@ -39,6 +39,7 @@ const Tile = function({spoil, coords}) {
 
   useEffect(()=>{
     setPos(coords);
+    setVal('');
     setNum(board[coords.y][coords.x]);
   }, [coords]);
 
