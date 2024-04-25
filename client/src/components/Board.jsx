@@ -16,6 +16,7 @@ const Board = function() {
   const [solve, setSolve] = st.newState('solve', useState(false));
 
   const tileSize = st.tileSize;
+  const clearTile = st.clearTile = {};
 
   const info = {
     3: 'Each number (1 - 9) is used one time.',
@@ -82,6 +83,7 @@ const Board = function() {
         }
 
         b[i][j] = num;
+        clearTile[i + '.' + j];
       }
     }
 

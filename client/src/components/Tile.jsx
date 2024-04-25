@@ -13,6 +13,8 @@ const Tile = function({spoil, coords}) {
   const tileSize = st.tileSize;
   const style = {top: y * tileSize + 'px', left: x * tileSize + 'px'};
 
+  st.clearTile[x + '.' + y] = ()=>{setVal('')};
+
   var handleChange = function(e) {
     if (Number(e.target.value)) {
       setVal(e.target.value.slice(e.target.value.length - 1));
@@ -39,7 +41,6 @@ const Tile = function({spoil, coords}) {
 
   useEffect(()=>{
     setPos(coords);
-    setVal('');
     setNum(board[coords.y][coords.x]);
   }, [coords]);
 
