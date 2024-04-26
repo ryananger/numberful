@@ -38,7 +38,7 @@ const App = function() {
       <small>
         <a href='https://ryscott.xyz/15puzzl'>15puzzl</a>&emsp; | &emsp;
         <a href='https://ryscott.xyz/sudoku'>sudoku</a>&emsp; | &emsp;
-        created by <a href='https://ryscott.xyz/portfolio'>_________</a></small>
+        created by <a href='https://earthpunk.art'>_________</a></small>
     </div>
   );
 };
